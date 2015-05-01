@@ -1,0 +1,7 @@
+{
+  "name": "Find me server",
+  "description": "Simple app that reiceive gps info and display them",
+  "repository": "https://github.com/guslep/FriendLocator.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}

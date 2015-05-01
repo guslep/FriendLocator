@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    height: 100%;
+	
+        margin: 0px;
+            padding: 0px
+}
+
+ #map-canvas {
+            height: 100%;
+	
+            margin: 0px;
+            padding: 0px
+        }
+
+
+ html {
+            height: 100%;
+	
+            margin: 0px;
+            padding: 0px
+        }
+
