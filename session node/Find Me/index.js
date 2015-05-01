@@ -2,7 +2,7 @@
  * Created by Gus on 10/6/2014.
  */
 
-
+//to be removed
 //var httpServer=require("./node server")
 //var router= require("./router")
 //httpServer.start(router.route);
