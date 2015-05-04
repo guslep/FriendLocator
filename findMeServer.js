@@ -7,7 +7,15 @@ var io = require('socket.io').listen(server);
 
 var uuid= require('node-uuid');
 
-client = redis.createClient();
+
+if (process.env.REDISTOGO_URL) {
+    var rtg   = require("url").parse(process.env.REDISTOGO_URL);
+    client = redis.createClient(rtg.port, rtg.hostname);
+
+    client.auth(rtg.auth.split(":")[1]);
+} else {
+    client = redis.createClient();
+}
 
 //app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(express.static("public", __dirname + "/public"));
