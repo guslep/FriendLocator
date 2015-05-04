@@ -2,7 +2,7 @@ var express = require('express'),http= require('http');
 var bodyParser = require('body-parser')
 var redis=require('redis');
 var app = express();
-var server = app.listen(8080);
+var server = app.listen(process.env.PORT || 8080);
 var io = require('socket.io').listen(server);
 
 var uuid= require('node-uuid');
