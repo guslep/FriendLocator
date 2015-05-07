@@ -35,7 +35,7 @@ app.get('/newsession', function(req, res) {
     client.set('opensession'+sessionID,'ok')
     client.expire('opensession'+sessionID,60000)
     //res.render('newSession.ejs', {session:'http://192.168.0.118:8080/load/'+sessionID});
-    res.json({session:'http://192.168.0.108:8080/load/'+sessionID});
+    res.json({session:'https://find-me-server.herokuapp.com/load/'+sessionID});
 
 
 });
